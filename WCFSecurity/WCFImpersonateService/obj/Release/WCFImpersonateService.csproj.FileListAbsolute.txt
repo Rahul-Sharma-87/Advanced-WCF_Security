@@ -1,0 +1,4 @@
+C:\Data\WCFHostingImpersonation\WCFImpersonateService\WCFImpersonateService\bin\Release\WCFImpersonateService.dll
+C:\Data\WCFHostingImpersonation\WCFImpersonateService\WCFImpersonateService\bin\Release\WCFImpersonateService.pdb
+C:\Data\WCFHostingImpersonation\WCFImpersonateService\WCFImpersonateService\obj\Release\WCFImpersonateService.dll
+C:\Data\WCFHostingImpersonation\WCFImpersonateService\WCFImpersonateService\obj\Release\WCFImpersonateService.pdb

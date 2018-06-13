@@ -1,0 +1,5 @@
+C:\Data\WCFHostingImpersonation\WCFImpersonateService\WCFImpersonateConsole\bin\Release\WCFImpersonateConsole.exe.config
+C:\Data\WCFHostingImpersonation\WCFImpersonateService\WCFImpersonateConsole\bin\Release\WCFImpersonateConsole.exe
+C:\Data\WCFHostingImpersonation\WCFImpersonateService\WCFImpersonateConsole\bin\Release\WCFImpersonateConsole.pdb
+C:\Data\WCFHostingImpersonation\WCFImpersonateService\WCFImpersonateConsole\obj\Release\WCFImpersonateConsole.exe
+C:\Data\WCFHostingImpersonation\WCFImpersonateService\WCFImpersonateConsole\obj\Release\WCFImpersonateConsole.pdb

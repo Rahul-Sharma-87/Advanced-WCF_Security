@@ -1,0 +1,6 @@
+C:\Data\WCFHostingImpersonation\WCFImpersonateServiceLogger\Ouput\bin\Release\WCFImpersonateService1.exe.config
+C:\Data\WCFHostingImpersonation\WCFImpersonateServiceLogger\Ouput\bin\Release\WCFImpersonateService1.exe
+C:\Data\WCFHostingImpersonation\WCFImpersonateServiceLogger\Ouput\bin\Release\WCFImpersonateService1.pdb
+C:\Data\WCFHostingImpersonation\WCFImpersonateServiceLogger\WCFImpersonateConsole\obj\Release\WCFImpersonateService1.csprojResolveAssemblyReference.cache
+C:\Data\WCFHostingImpersonation\WCFImpersonateServiceLogger\WCFImpersonateConsole\obj\Release\WCFImpersonateService1.exe
+C:\Data\WCFHostingImpersonation\WCFImpersonateServiceLogger\WCFImpersonateConsole\obj\Release\WCFImpersonateService1.pdb
