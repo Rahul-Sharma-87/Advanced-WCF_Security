@@ -1,4 +1,4 @@
-Analysis for possibility to provide just server side certificate in WCF (TCP binding) to align with HTTP binding
+Analysis for possibility to provide just server side trust root certificate in WCF (TCP binding) to align with HTTP binding and client side WCF must pick based on client installed certificate with explicit settings.
 
 Below are observations:
 Tested all below scenarios with sample service with proper certificates and spanned across machines.
