@@ -1,0 +1,29 @@
+Steps to create ssl certificate including CA
+
+1.	Create certificates, Navigate to C:\Program Files (x86)\Windows Kits\8.1\bin\x64 in admin mode.
+
+     a.	Make root certificate: Please provide test as password , create C:\now folder and subfolder client1
+
+cmd1: makecert.exe -n "CN=CAMain" -r -pe -a sha512 -len 4096 -cy authority -sv C:\now\CAMain.pvk C:\now\CAMain.cer
+cmd2: pvk2pfx.exe –pvk C:\now\CAMain.pvk –spc C:\now\CAMain.cer –pfx C:\now\CAMain.pfx –po test
+
+b.	Make server certificate, Please provide test as password all the places it pops up and replace ClientCert with your server machine host name
+
+cmd1: makecert -iv C:\now\CAMain.pvk -n "CN=ClientCert" -sv C:\now\client1\ClientCert.pvk -ic C:\now\CAMain.cer C:\now\client1\ClientCert.cer -sr LocalMachine -ss My -sky exchange –pe 
+cmd2: pvk2pfx -pvk "C:\now\client1\ClientCert.pvk" -spc "C:\now\client1\ClientCert.cer" -pfx "C:\now\client1\ClientCert.pfx" –po test
+
+2.	At server side, Install certificate: open mmc ->Add\remove snapin  select certificate ->local machine
+
+a.	Install root certificate -> select C:\now\ CAMain.cer
+
+b.	Install client certificate -> select C:\now\ client1\ ClientCert.pfx and provide password as test
+
+On Deployment application may not work without CRL in place with above certificates
+Make CRL and install
+makecert -crl -n “CN=CAPlatform” -r -sv CAPlatform.pvk CAPlatform.crl
+
+
+For Enabling HTTPS
+
+1.	Additionally keep thumbprint handy for installed certificate, removed spaces and keep in notepad below steps 3.
+netsh http add sslcert ipport=0.0.0.0:443 number* certhash=‎*thumbprint of the certificate* appid=*GUID*
